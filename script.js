@@ -7,7 +7,23 @@ const csv = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,
 const rows = csv.split("\n");
 console.log(rows);
 
-// PART 2 //
+// // PART 2 //
 
 const table = rows.map(row => row.split (","));
 console.log(table);
+
+// PART 3 //
+
+const titles = table[0];
+console.log(titles);
+
+const info = table.slice(1);
+console.log(info);
+
+const objects = [];
+for (const row of info) {
+    const person = {};
+
+    person.id = row[0];
+    console.log(person);
+}
