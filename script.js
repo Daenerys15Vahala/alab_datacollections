@@ -38,3 +38,11 @@ console.log(objects);
 // PART 4 //
 objects.pop();
 console.log(objects);
+
+objects.splice(1,0, {
+    id: "48",
+    name: "Barry",
+    occupation: "Runner",
+    age: "25"
+});
+console.log(objects);
