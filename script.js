@@ -34,3 +34,7 @@ for (const row of info) {
 }
 
 console.log(objects);
+
+// PART 4 //
+objects.pop();
+console.log(objects);
