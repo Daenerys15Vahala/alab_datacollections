@@ -45,4 +45,33 @@ objects.splice(1,0, {
     occupation: "Runner",
     age: "25"
 });
+
+objects.push({
+    id: "7", 
+    name: "Bilbo", 
+    occupation: "None", 
+    age: "111"
+});
+
 console.log(objects);
+
+// age
+
+let totalAge = 0;
+for (const person of objects){
+    totalAge += Number(person.age);
+}
+console.log(totalAge);
+
+const averageAge = totalAge / objects.length;
+
+console.log(averageAge);
+
+// back to csv
+
+let newCSV = "id, name, occupation, age";
+
+for (const person of objects) {
+    newCSV += `\n${person.id},${person.name},${person.occupation},${person.age}`;
+}
+console.log(newCSV);
