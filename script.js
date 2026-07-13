@@ -21,9 +21,16 @@ const info = table.slice(1);
 console.log(info);
 
 const objects = [];
+
 for (const row of info) {
     const person = {};
 
     person.id = row[0];
-    console.log(person);
+    person.name = row [1];
+    person.occupation = row [2];
+    person.age = row [3];
+
+    objects.push(person);
 }
+
+console.log(objects);
